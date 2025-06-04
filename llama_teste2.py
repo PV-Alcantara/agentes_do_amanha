@@ -1,5 +1,6 @@
 from langchain_community.llms import Ollama
-import math
+from math import sqrt
+
 
 llm = Ollama(model="llama3")  # ou outro modelo que tenha
 
@@ -47,7 +48,7 @@ def agente(input_usuario):
     else:
         return resposta
 
-pergunta = "Dado ao dia ensolarado, céu azul, muitos carros passando, o asfalto ser quente, a folha das árvores serem verdes, quanto é 2 + 2?"
+pergunta = "quanto é 8 * 8"
 saida = agente(pergunta)
 print(saida)
 
