@@ -92,7 +92,8 @@ perguntas = [
     "Qual a capital do Brasil?",
     "quanto é 10 / 0",
     "elefante",
-    "Usar Calculadora: sqrt(9"
+    "Usar Calculadora: sqrt(9)"
+    "Qual o papa atual?"
 ]
 
 for pergunta in perguntas:
