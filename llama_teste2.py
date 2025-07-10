@@ -1,8 +1,8 @@
-from langchain_community.llms import Ollama
+from langchain_community.llms import ollama
 from math import sqrt
 
 
-llm = Ollama(model="llama3")  # ou outro modelo que tenha
+llm = ollama(model="deepseek-r1")  # ou outro modelo que tenha
 
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
