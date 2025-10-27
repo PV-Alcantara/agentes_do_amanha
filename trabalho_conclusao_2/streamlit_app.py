@@ -24,7 +24,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 
 # --- CONFIGURAÇÃO DE PASTAS E VARIÁVEIS GLOBAIS ---
-docs_folder = "docs_tcc"
+docs_folder = "trabalho_conclusao_2/docs_tcc/"
 if not os.path.exists(docs_folder):
     os.makedirs(docs_folder)
 
