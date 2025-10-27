@@ -156,7 +156,7 @@ def carregar_e_processar_bases_estaticas(docs_folder):
         df_ipi['codigo'] = df_ipi['ncm'].copy()
         df_ipi['ncm'] = df_ipi['ncm'].str.replace('.', '', regex=False)
         df_ipi['aliquota'] = df_ipi['aliquota'].astype(str).str.replace('NT','0',regex=False).fillna('0')
-        df_ipi = df_ipi.drop(columns=[col for col in ['unnamed_4','ex'] if col in df_ipi.columns], errors='ignore')
+        #df_ipi = df_ipi.drop(columns=[col for col in ['unnamed_4','ex'] if col in df_ipi.columns], errors='ignore')
         dfs_bases['df_ipi'] = df_ipi
     except Exception:
         st.error("Erro ao carregar 'Tipi.csv'. Verifique o arquivo.")
