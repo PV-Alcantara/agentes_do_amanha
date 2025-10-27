@@ -543,7 +543,7 @@ def carregar_notas_por_upload(files):
     return df_notas, cnpj_list
 
 # --- INTERFACE ---
-st.title("Processamento de Notas Fiscais - LangChain")
+st.title("Processamento de Notas Fiscais Eletrônics - NFe")
 
 # Carrega variáveis de ambiente e agent
 load_dotenv()
